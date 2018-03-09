@@ -1,4 +1,4 @@
-I recently need some code for Bezier curves and while there was a lot a stuff spread around the internet about curves it was difficult to find a single implementation that included all the commonly needed algorithms. I ended up writing a implementation based on a few sources (mostly this one) and thought I would shared the results as there were a few things that are quite hard to work out.
+I recently need some code for Bezier curves and while there was a lot a stuff spread around the internet about curves it was difficult to find a single implementation that included all the commonly needed algorithms. I ended up writing a implementation based on a few sources (mostly this [one](https://www.codeproject.com/Articles/25237/Bezier-Curves-Made-Simple)) and thought I would shared the results as there were a few things that are quite hard to work out.
 
 See [home page](https://www.digital-dust.com/single-post/2018/03/09/Bezier-Curves-in-Unity) for Unity package download.
 

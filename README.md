@@ -1,2 +1,23 @@
-# Bezier-Curves-In-Unity
-Bezier curve code.
+I recently need some code for Bezier curves and while there was a lot a stuff spread around the internet about curves it was difficult to find a single implementation that included all the commonly needed algorithms. I ended up writing a implementation based on a few sources (mostly this one) and thought I would shared the results as there were a few things that are quite hard to work out.
+
+See home page for Unity package download.
+
+I ended up with 3 Bezier curve classes.
+
+First a general Bezier curve class based on a  Bernstein polynomial and able to support any degree of curve (Its capped at 31 due to precision issues). You would not normally use more than a cubic curve (degree 3)  however.
+
+This class contains functions to find the position, normal, tangent or first derivative as well as find the total length of the curve via integration. There's also a function to split the curve at any position and return two new curves of the same degree.
+
+Next is a Parametric Bezier class that extends the previous one and allows the the exact parameter at any length on the curve to be determined. This is useful to move along the curve at a constant speed or to create line segments from the curve that are evenly spaced.
+
+Next is a Quadratic Bezier class. While the general Bezier class can represent a quadratic curve its use full to have a dedicated class for this degree of curve as it one of the most commonly used and many of its properties have closed form solutions.
+
+This class contains functions to find the position, normal, tangent or first derivative as well as find the total length of the curve but with a closed for solution rather than integration. There's also a closed form solution to find the closest point on the curve to another point and if the curve intersects a segment.
+
+Below is a image of linear, quadratic, cubic, quartic and quintic degree curve.
+
+![Bezier Curves]()
+
+And here's a comparison of the parametric curve (on the right) to a normal curve. Notice its segments are more evenly spaced.
+
+![Bezier Curves]()

@@ -8,9 +8,9 @@ First a general Bezier curve class based on a  Bernstein polynomial and able to 
 
 This class contains functions to find the position, normal, tangent or first derivative as well as find the total length of the curve via integration. There's also a function to split the curve at any position and return two new curves of the same degree.
 
-Next is a Parametric Bezier class that extends the previous one and allows the the exact parameter at any length on the curve to be determined. This is useful to move along the curve at a constant speed or to create line segments from the curve that are evenly spaced.
+Next is a Parametric Bezier class that extends the previous one and allows the exact parameter at any length on the curve to be determined. This is useful to move along the curve at a constant speed or to create line segments from the curve that are evenly spaced.
 
-Next is a Quadratic Bezier class. While the general Bezier class can represent a quadratic curve its use full to have a dedicated class for this degree of curve as it one of the most commonly used and many of its properties have closed form solutions.
+Next is a Quadratic Bezier class. While the general Bezier class can represent a quadratic curve its usefull to have a dedicated class for this degree of curve as it one of the most commonly used and many of its properties have closed form solutions.
 
 This class contains functions to find the position, normal, tangent or first derivative as well as find the total length of the curve but with a closed for solution rather than integration. There's also a closed form solution to find the closest point on the curve to another point and if the curve intersects a segment.
 

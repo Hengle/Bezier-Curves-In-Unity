@@ -1,6 +1,6 @@
 I recently need some code for Bezier curves and while there was a lot a stuff spread around the internet about curves it was difficult to find a single implementation that included all the commonly needed algorithms. I ended up writing a implementation based on a few sources (mostly this one) and thought I would shared the results as there were a few things that are quite hard to work out.
 
-See home page for Unity package download.
+See [home page](https://www.digital-dust.com/single-post/2018/03/09/Bezier-Curves-in-Unity) for Unity package download.
 
 I ended up with 3 Bezier curve classes.
 
@@ -16,8 +16,8 @@ This class contains functions to find the position, normal, tangent or first der
 
 Below is a image of linear, quadratic, cubic, quartic and quintic degree curve.
 
-![Bezier Curves]()
+![Bezier Curves](https://static.wixstatic.com/media/1e04d5_fc3781020dc04a538216b06649c12946~mv2.png/v1/fill/w_550,h_550,al_c,usm_0.66_1.00_0.01/1e04d5_fc3781020dc04a538216b06649c12946~mv2.png)
 
 And here's a comparison of the parametric curve (on the right) to a normal curve. Notice its segments are more evenly spaced.
 
-![Bezier Curves]()
+![Bezier Curves](https://static.wixstatic.com/media/1e04d5_944e3646b21f4b438c6a4e639760a4ca~mv2.png/v1/fill/w_486,h_486,al_c,usm_0.66_1.00_0.01/1e04d5_944e3646b21f4b438c6a4e639760a4ca~mv2.png)
